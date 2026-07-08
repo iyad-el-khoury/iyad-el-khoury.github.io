@@ -1,28 +1,4 @@
-# Site settings
 theme: jekyll-theme-minimal
 title: Iyad El Khoury's homepage
 description: Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them.
 
-# Author info (used by some themes in the footer/header)
-author: Iyad El Khoury
-
-# URL settings
-url: "https://iyad-el-khoury.github.io"
-baseurl: ""
-
-# Markdown & build settings
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
-
-# Navigation (add links as you build out more pages)
-# Example:
-# nav:
-#   - title: Home
-#     url: /
-#   - title: Publications
-#     url: /publications
-
-# Social links (fill in or remove as needed)
-# github_username: iyad-el-khoury
-# linkedin_username: your-linkedin-handle
