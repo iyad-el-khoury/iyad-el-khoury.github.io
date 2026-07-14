@@ -1,6 +1,10 @@
 title: "Iyad El Khoury's homepage"
-author: "Iyad El Khoury"
-description: "Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them."
+author: 
+  name: "Iyad El Khoury"
+  email: iyad.e.k2005@gmail.com
+
+description: >
+  "Welcome to my website, I am currently an undergraduate student at l'École Polytechnique passionate for mathematics, computer science and the many links between them."
 url: "https://iyad-el-khoury.github.io"
 
 remote_theme: jekyll/minima@d4d779a
@@ -15,7 +19,8 @@ plugins:
   - jekyll-remote-theme
 
 minima:
-  skin: auto
+  skin: solarized-light
+  date_format: "%b-%d-%Y"
   social_links:
     - title: GitHub
       icon: github
