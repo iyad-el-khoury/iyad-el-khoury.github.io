@@ -1,9 +1,9 @@
-theme: minima
-
 title: "Iyad El Khoury's homepage"
 author: "Iyad El Khoury"
 description: "Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them."
 url: "https://iyad-el-khoury.github.io"
+
+remote_theme: jekyll/minima@d4d779a
 
 permalink: "/blog/:year/:month/:day/:title/"
 markdown: kramdown
@@ -12,10 +12,14 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 minima:
-  skin: classic
+  skin: auto
   social_links:
-    - title: My LinkedIn
-    - icon: linkedin
-    - url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
+    - title: GitHub
+      icon: github
+      url: "https://github.com/iyad-el-khoury"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
