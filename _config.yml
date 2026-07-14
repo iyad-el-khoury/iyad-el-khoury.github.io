@@ -21,7 +21,7 @@ plugins:
 minima:
   skin: solarized-light
   date_format: "%b-%d-%Y"
-  hide_site_feed_link: true
+  hide_site_feed_link: false
   social_links:
     - title: GitHub
       icon: github
