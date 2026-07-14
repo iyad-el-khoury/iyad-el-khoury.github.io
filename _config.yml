@@ -1,19 +1,29 @@
-# Site settings
-theme: jekyll-theme-minimal
-title: Iyad El Khoury's homepage
-description: Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them.
+# _config.yml
+# ------------------------------------------------------------------
+# This file holds SITE-WIDE settings. Anywhere in a template you can
+# write {{ site.title }} and Jekyll will drop in the value below.
+# Whenever you edit this file, you need to restart `jekyll serve`
+# (it's the one file Jekyll doesn't "hot reload").
+# ------------------------------------------------------------------
 
-# Author info (used by some themes in the footer/header)
-author: Iyad El Khoury
-
-# URL settings
+theme: "jekyll-theme-minimal"
+title: "Iyad El Khoury's homepage"
+author: "Iyad El Khoury"
+description: "Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them."
+github_username: "iyad-el-khoury"
+linkedin_username: "iyad-el-khoury-ba7a43373"
 url: "https://iyad-el-khoury.github.io"
-baseurl: ""
+
+# Where blog posts live and what their URLs look like.
+# :year/:month/:day/:title -> /blog/2026/07/14/my-post-title/
+permalink: "/blog/:year/:month/:day/:title/"
 
 # Markdown & build settings
 markdown: kramdown
 plugins:
-  - jekyll-seo-tag
+  - jekyll-feed      # generates an RSS feed at /feed.xml automatically
+  - jekyll-sitemap   # generates a sitemap.xml for search engines
+  - jekyll-seo-tag 
 
 # Navigation (add links as you build out more pages)
 # Example:
