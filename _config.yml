@@ -6,12 +6,15 @@
 # (it's the one file Jekyll doesn't "hot reload").
 # ------------------------------------------------------------------
 
-theme: "jekyll-theme-minimal"
+theme: minima
+minima:
+  skin: classic          # or: dark, solarized-light, solarized-dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/iyad-el-khoury" }
+    - { platform: linkedin, user_url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373" }
 title: "Iyad El Khoury's homepage"
 author: "Iyad El Khoury"
 description: "Welcome to my website, I am currently a student at l'École Polytechnique passionate for mathematics, computer science and the many links between them."
-github_username: "iyad-el-khoury"
-linkedin_username: "iyad-el-khoury-ba7a43373"
 url: "https://iyad-el-khoury.github.io"
 
 # Where blog posts live and what their URLs look like.
@@ -24,15 +27,3 @@ plugins:
   - jekyll-feed      # generates an RSS feed at /feed.xml automatically
   - jekyll-sitemap   # generates a sitemap.xml for search engines
   - jekyll-seo-tag 
-
-# Navigation (add links as you build out more pages)
-# Example:
-# nav:
-#   - title: Home
-#     url: /
-#   - title: Publications
-#     url: /publications
-
-# Social links (fill in or remove as needed)
-# github_username: iyad-el-khoury
-# linkedin_username: your-linkedin-handle
