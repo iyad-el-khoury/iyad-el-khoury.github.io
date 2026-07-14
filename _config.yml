@@ -16,5 +16,6 @@ plugins:
 minima:
   skin: classic
   social_links:
-    - { platform: github, user_url: "https://github.com/iyad-el-khoury" }
-    - { platform: linkedin, user_url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373" }
+    - title: My LinkedIn
+    - icon: linkedin
+    - url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
