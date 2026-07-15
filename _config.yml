@@ -2,13 +2,10 @@ title: "Iyad El Khoury's homepage"
 author:
   name: "Iyad El Khoury"
   email: iyad.e.k2005@gmail.com
-
 description: >
   Welcome to my website, I am currently an undergraduate student at l'École Polytechnique passionate for mathematics, computer science and the many links between them.
 url: "https://iyad-el-khoury.github.io"
-
 remote_theme: jekyll/minima@d4d779a
-
 permalink: "/blog/:year/:month/:day/:title/"
 markdown: kramdown
 
@@ -29,3 +26,17 @@ minima:
     - title: LinkedIn
       icon: linkedin
       url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
+
+# Pages shown in the top navigation bar, in this order.
+# about.md and index.md are excluded automatically by minima's default logic,
+# so we list what should appear explicitly.
+header_pages:
+  - about.md
+
+# Files/folders Jekyll should not try to process.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
