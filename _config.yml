@@ -3,7 +3,9 @@ author:
   name: "Iyad El Khoury"
   email: iyad.e.k2005@gmail.com
 description: >
-  Welcome to my website, I am currently an undergraduate student at l'École Polytechnique passionate for mathematics, computer science and the many links between them.
+  Welcome to my personal website! Here you can find informations about
+ myself, blogs discussing my current interests and some contact details / other socials.
+
 url: "https://iyad-el-khoury.github.io"
 remote_theme: jekyll/minima@d4d779a
 permalink: "/blog/:year/:month/:day/:title/"
@@ -18,7 +20,7 @@ plugins:
 minima:
   skin: solarized-light
   date_format: "%b-%d-%Y"
-  hide_site_feed_link: true
+  hide_site_feed_link: false
   social_links:
     - title: GitHub
       icon: github

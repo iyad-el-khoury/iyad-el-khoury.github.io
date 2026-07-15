@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-I'm Iyad El Khoury, an undergraduate student at l'École Polytechnique. I'm passionate about mathematics, computer science, and the many connections between them — from the theory that underlies algorithms to the way computation can be used to explore mathematical ideas.
+Hello :), my name is Iyad I am French and Lebanese but have grown up in The Hague, Netherlands. 
+  I have just recently finished my undergraduate studies at the Bachelor program of l'École Polytechnique and
+  I am now moving on to l'École Normale Supérieure de Lyon to join their mathematics department. 
+
+  Some of my hobbies are basketball, playing board games, cooking and hanging out with friends  
 
 On this site I'll be sharing:
 
 - Notes and write-ups on topics I'm studying
-- Small projects and experiments in code
-- Occasional thoughts on math, CS, and anything in between
+- Short blog posts on math and computer science I find interesting
+- General updates on my academic and professional journey  
 
-Feel free to reach out — you can find links to my GitHub and LinkedIn in the footer.
+Feel free to reach out if you would like to discuss about any of my posts or have more specific questions — you can find links to my LinkedIn, E-mail and Github in the footer.
