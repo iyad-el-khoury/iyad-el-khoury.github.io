@@ -34,7 +34,7 @@ minima:
 # so we list what should appear explicitly.
 header_pages:
   - about.md
-
+  - projects.md
 # Files/folders Jekyll should not try to process.
 exclude:
   - Gemfile
