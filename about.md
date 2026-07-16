@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-<img src="/assets/jpgs/Iyad_graduation.JPG" alt="Iyad El Khoury" style="float: right; width: 220px; margin: 0 0 16px 24px; border-radius: 8px;">
+<img src="/assets/jpgs/iyad_graduation.JPG" alt="Iyad El Khoury" style="float: right; width: 220px; margin: 0 0 16px 24px; border-radius: 8px;">
 
 Hello :), my name is Iyad I am French and Lebanese but have grown up in The Hague, Netherlands. 
   I have just recently finished my undergraduate studies at the Bachelor program of l'École Polytechnique and
