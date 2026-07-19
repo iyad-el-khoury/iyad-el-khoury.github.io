@@ -15,4 +15,9 @@ As part of the oral exams, every student must write a rapport on a topic of thei
 
 **[Personal Rapport](/assets/pdfs/RapportPerso_Iyad_El_Khoury.pdf)**, **[Presentation](/assets/pdfs/IYAD_TIPE_PRES.pdf)**
 
+### Approximating solutions to the burning of trees
+A current open problem in combinatorial game theory & optimization is the burning number conjecture. It states that the burning number of any connected graph on \(n\)
+
 ### Project at CMLS supervised by Lorenzo Fantini
+
+
