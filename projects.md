@@ -16,7 +16,13 @@ As part of the oral exams, every student must write a rapport on a topic of thei
 **[Personal Rapport](/assets/pdfs/RapportPerso_Iyad_El_Khoury.pdf)**, **[Presentation](/assets/pdfs/IYAD_TIPE_PRES.pdf)**
 
 ### Approximating solutions to the burning of trees using GNNs
-A current open problem in combinatorial game theory & optimization is the burning number conjecture. It states that the burning number of any connected graph on $$ n $$
+As our understanding of machine learning models improves, the mathematics community has attempted to apply these new tools to the resolution of optimisation problems.
+
+In this project, I returned to an open problem which I learnt about during my time at the **[Combi team](https://www.lix.polytechnique.fr/combi/index.html)** of **[LIX](https://www.lix.polytechnique.fr)**, the so called burning number conjecture. The conjecture is about a graph parameter called the *burning number*, which is defined via a certain covering process on the graph. The problem of asking whether the burning number of specific graph is at most $$k$$ is known to be NP-complete, it is thus reasonable to try and devise an algorithm to approximate solutions to this question. Inspired by the work done for finding **[Hamiltonian cycles in a graph](https://arxiv.org/abs/2306.06523)**, we trained a graph neural network to estimate the burning number of trees. Below you may find a presentation explaining the problem along with this machine learning approach. Moreover, our Jupyter Notebook may be found on my GitHub:
+
+**[GNNs applied to the burning problem](/assets/pdfs/Burning_Problem_using_ML.pdf)**
+
+
 
 ### Project at CMLS supervised by Lorenzo Fantini
 
