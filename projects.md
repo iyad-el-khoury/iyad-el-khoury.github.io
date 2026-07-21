@@ -11,7 +11,7 @@ L'École Normale Supérieure de Lyon is a research oriented institution in Franc
 
 To give an idea of what is expected, here are the **[past exams](https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/#mathematiques)**. I myself passed the mathematics and computer science tests.
 
-As part of the oral exams, every student must write a rapport on a topic of their choice. Naturally, I chose to talk about my own research interests in combinatorics, more specifically on the problem of constructing explicit Ramsey graphs. By the title you can find my rapport along with the presentation I gave to the jury.
+As part of the oral exams, every student must write a rapport on a topic of their choice. I chose to talk about my own research interests in combinatorics, more specifically on the problem of constructing explicit Ramsey graphs. By the title you can find my rapport along with the presentation I gave to the jury.
 
 
 ### Bachelor Thesis
