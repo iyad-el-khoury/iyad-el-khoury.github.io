@@ -13,8 +13,16 @@
           <label for="nav-trigger">
             <span class="menu-icon"></span>
           </label>
-          {% include nav-items.html paths = page_paths %}
-          <a class="page-link" href="{{ '/assets/pdfs/CV_Iyad_El_Khoury.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">CV</a>
+  
+          <div class="nav-items">
+            {%- for path in page_paths -%}
+              {%- assign hyperpage = site.pages | where: "path", path | first -%}
+              {%- if hyperpage.title %}
+                <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+              {%- endif -%}
+            {%- endfor %}
+            <a class="nav-item" href="{{ '/assets/pdfs/CV_Iyad_El_Khoury.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">CV</a>
+          </div>
         </nav>
       {%- endunless %}
     </div>
