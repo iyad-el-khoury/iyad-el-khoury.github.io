@@ -29,6 +29,7 @@ minima:
     - title: LinkedIn
       icon: linkedin
       url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
+show_excerpts: true
 
 # Pages shown in the top navigation bar, in this order.
 # about.md and index.md are excluded automatically by minima's default logic,
