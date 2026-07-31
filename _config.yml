@@ -20,6 +20,7 @@ plugins:
 minima:
   skin: solarized-light
   date_format: "%b-%d-%Y"
+  hide_site_feed_link: true
   social_links:
     - title: GitHub
       icon: github
@@ -28,7 +29,6 @@ minima:
       icon: linkedin
       url: "https://linkedin.com/in/iyad-el-khoury-ba7a43373"
 show_excerpts: true
-hide_site_feed_link: true
 
 # Pages shown in the top navigation bar, in this order.
 # about.md and index.md are excluded automatically by minima's default logic,
