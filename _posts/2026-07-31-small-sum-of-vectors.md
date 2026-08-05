@@ -19,9 +19,6 @@ By the first moment method, we thus now there exists a choice of sign $$\{\bar \
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
-There exists a choice of signs $$\{\bar\varepsilon_i\}_i \in \{-1,1\}^n$$ such that
-$$
-\left\lVert \bar\varepsilon_1 v_1 + \dots + \bar\varepsilon_n v_n \right\rVert \leq \sqrt{n}.
-$$
+For any Euclidean norm, $$\lVert \cdot \rVert$$ on $$\mathbb{R}^d$$ and unit vecotrs $$v_1,\dots,v_n\in \mathbb{R}^d$$, there exists $$\{\varepsilon_i\}_i$$ such that $$ \left\lVert \bar\varepsilon_1 v_1 + \dots + \bar\varepsilon_n v_n \right\rVert \leq \sqrt{n} $$
 </div>
 
