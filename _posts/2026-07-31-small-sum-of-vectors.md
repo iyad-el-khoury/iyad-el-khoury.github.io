@@ -24,6 +24,7 @@ For any Euclidean norm, $$\lVert \cdot \rVert$$ on $$\mathbb{R}^d$$ and unit vec
 $$ 
 \left\lVert \bar\varepsilon_1 v_1 + \dots + \bar\varepsilon_n v_n \right\rVert \leq \sqrt{n} 
 $$
+
 </div>
 
 We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_n \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$\Sigma := [-1,1]^n$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
