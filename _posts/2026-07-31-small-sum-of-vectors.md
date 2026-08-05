@@ -14,3 +14,14 @@ Let $$(\mathbb{R}^d,\langle \cdot | \cdot \rangle)$$ be a Euclidean space, denot
 $$
 \mathbb{E}\big[\langle Z \mid Z \rangle\big] = \sum_{i=1}^n \sum_{j=1}^n \mathbb{E}[\varepsilon_i \varepsilon_j] \langle v_i \mid v_j \rangle = \sum_{i=1}^n \lVert v_i \rVert ^2= n
 $$
+
+By the first moment method, we thus now there exists a choice of sign $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that $$\lVert Z \rVert^2 \leq n$$. This immedieatly gives us a first result:
+
+<div class="theorem" markdown="1">
+<span class="theorem-title"></span>
+There exists a choice of signs $$\{\bar\varepsilon_i\}_i \in \{-1,1\}^n$$ such that
+$$
+\left\lVert \bar\varepsilon_1 v_1 + \dots + \bar\varepsilon_n v_n \right\rVert \leq \sqrt{n}.
+$$
+</div>
+
