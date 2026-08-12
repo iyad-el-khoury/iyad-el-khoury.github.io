@@ -38,6 +38,7 @@ Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and
 Let $$Z$$ be some real valued random variable, then the function $$t\mapsto \mathbb{E}[\exp(tZ)]$$ is called the moment generating function of $$Z$$ and may be expanded as a power series given by the following formula $$M_Z(t) = \sum _{n\geq 0} \mathbb{E}[Z^n] \frac{t^n}{n!}$$. 
 
 Given we have control on the moment generating function of $$Z$$, then, by Markov's inequality, we would obtain a concentration of measure inequality:
+
 $$
 \left\{
 \begin{aligned}
@@ -50,3 +51,8 @@ $$
 $$
 
 A general way of doing so is by approximating the exponential function close to zero at the second order.
+
+<div class="lemma">
+<span class="lemma-title"></span>
+
+<div>

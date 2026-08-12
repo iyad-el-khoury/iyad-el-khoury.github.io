@@ -4,7 +4,7 @@
   }
 
   body {
-    counter-reset: theorem-counter;
+    counter-reset: theorem-counter lemma-counter;
   }
 
   .theorem {
@@ -25,7 +25,26 @@
     content: "Theorem " counter(theorem-counter) ". ";
   }
 
-  .theorem mjx-container[display="true"] {
+  .lemma {
+    counter-increment: lemma-counter;
+    border-left: 4px solid #268bd2;
+    background: #eef6fb;
+    padding: 0.8em 1.2em;
+    margin: 1.5em 0;
+    border-radius: 4px;
+  }
+  .lemma-title {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.4em;
+    display: block;
+  }
+  .lemma-title::before {
+    content: "Lemma " counter(lemma-counter) ". ";
+  }
+
+  .theorem mjx-container[display="true"],
+  .lemma mjx-container[display="true"] {
     display: block !important;
     text-align: center !important;
     margin: 1em auto !important;
