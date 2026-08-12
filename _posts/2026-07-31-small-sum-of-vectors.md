@@ -37,10 +37,16 @@ Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and
 #### The exponential moment method
 Let $$Z$$ be some real valued random variable, then the function $$t\mapsto \mathbb{E}[\exp(tZ)]$$ is called the moment generating function of $$Z$$ and may be expanded as a power series given by the following formula $$M_Z(t) = \sum _{n\geq 0} \mathbb{E}[Z^n] \frac{t^n}{n!}$$. 
 
-Given we can gain a good control the moment generating function of $$Z$$, then, by Markov's inequality, we would obtain a concentration of measure inequality:
-
+Given we have control on the moment generating function of $$Z$$, then, by Markov's inequality, we would obtain a concentration of measure inequality:
 $$
-\mathbb{P}[Z \geq \lambda] = \mathbb{P}[\exp (tZ) \geq \exp(t\lambda)] \leq e^{-\lambda t}M_Z(t)
+\left\{
+\begin{aligned}
+\mathbb{P}[Z \geq \lambda] &= \mathbb{P}[\exp(tZ) \geq \exp(t\lambda)] \leq e^{-\lambda t} M_Z(t) \\
+\mathbb{P}[-Z \geq \lambda] &= \mathbb{P}[\exp(-tZ) \geq \exp(t\lambda)] \leq e^{-\lambda t} M_{Z}(-t)
+\end{aligned}
+\right.
+\quad \Longrightarrow \quad
+\mathbb{P}[|Z| \geq \lambda] \leq e^{-\lambda t}\big(M_Z(t) + M_{Z}(-t)\big)
 $$
 
 A general way of doing so is by approximating the exponential function close to zero at the second order.
