@@ -35,4 +35,4 @@ Let us denote by $$\lVert \cdot \rVert _\infty$$ the infinity norm of $$\mathbb{
 Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random varaibles as before. By our previous discussion we are interested in establishing a concentration inequalty for the random variable $$Z = \sum _i \varepsilon _i v_i$$, which will translate directly into a *small sum* theorem. For this we will make use of the exponential moment method, which I will quickly review before applying it to our problem. 
 
 #### The exponential moment method
-Let $$Z$$ be some real valued random variable, then the function $$t\mapsto \mathbb{E}[\exp(tZ)]$$ is called the moment generating function of $$Z$$ and may be expanded as a power series given by the following formula $$M_Z(t) = \sum _{n\geq 0} \frac{\mathbb{E}[Z^n]}{n!}$$.
+Let $$Z$$ be some real valued random variable, then the function $$t\mapsto \mathbb{E}[\exp(tZ)]$$ is called the moment generating function of $$Z$$ and may be expanded as a power series given by the following formula $$M_Z(t) = \sum _{n\geq 0} \mathbb{E}[Z^n] \frac{t^n}{n!}$$. 
