@@ -84,10 +84,14 @@ All in all, as we can choose a minimizing $$t$$, the better we understand the be
 
 Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random varaibles as before. By our previous discussion we are interested in establishing a concentration inequalty for the random variable $$Z = \sum _i \varepsilon _i v_i$$, which will translate directly into a *small sum* theorem. 
 
-To be abe to effectively apply the exponential moment method, we must carefully analyze $$M_Z(t)$$:
+To be able to effectively apply the exponential moment method, we must carefully analyze $$M_Z(t)$$:
 
 $$ 
-\mathbb{E}[\exp(tZ)] = \prod_i \mathbb{E}[ \exp(t\varepsilon_i)] = \prod_i \cosh(t)
+\mathbb{E}[\exp(tZ)] = \prod_i \mathbb{E}[ \exp(t\varepsilon_i)] = [\cosh(t)]^n \leq e^{nt^2/2}
 $$ 
 
+where the last inequality follows by a simple term by term comparison of the respective power series. Hence, for all $$\lambda \geq 0$$, by the exponential moment method combined with our previous inequality:
 
+$$
+\mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t}
+$$
