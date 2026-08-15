@@ -50,13 +50,14 @@ $$
 \mathbb{P}[|Z| \geq \lambda] \leq e^{-\lambda t}\big(M_Z(t) + M_{Z}(-t)\big)
 $$
 
-A general way of doing so is by approximating the exponential function close to zero at the second order.
+A general way of doing so is by approximating the exponential function close to zero at the second order, then we would obtain an exponential bound on the moment generating function for all bounded random variables on interval $$[-1,1]$$.
 
-<div class="lemma">
+<div class="lemma" markdown="1">
 <span class="lemma-title"></span>
 Let $$X$$ be some random variable of mean zero and $$|X| \leq 1$$, then for all $$t \in [-1,1]$$ of absolute value at most 1 we have $$M_X(t) \leq \exp(t^2\text{Var}(X))$$.
 <div>
-<div class="proof">
+
+<div class="proof" markdown="1">
     <span class="proof-title"></span>
 We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(Xt) \leq 1 + tX + t^2X^2$$ (which holds as $$|Xt| \leq 1 $$). Applying the expectation, we find that:
 
