@@ -45,7 +45,7 @@ $$
 \end{aligned}
 \right.
 \quad \Longrightarrow \quad
-\mathbb{P}[|Z| \geq \lambda] \leq e^{-\lambda t}\big(M_Z(t) + M_{Z}(-t)\big)
+\mathbb{P}[\vert Z \vert \geq \lambda] \leq e^{-\lambda t}\big(M_Z(t) + M_{Z}(-t)\big)
 $$
 
 <!--
@@ -54,12 +54,12 @@ A general way of doing so is by approximating the exponential function close to 
 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
-Let $$X$$ be some random variable of mean zero and $$|X| \leq 1$$, then for all $$t \in [-1,1]$$ of absolute value at most 1 we have $$M_X(t) \leq \exp(t^2\text{Var}(X))$$.
+Let $$X$$ be some random variable of mean zero and $$\vert X \vert \leq 1$$, then for all $$t \in [-1,1]$$ of absolute value at most 1 we have $$M_X(t) \leq \exp(t^2\text{Var}(X))$$.
 <div>
 
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(tX) \leq 1 + tX + t^2X^2$$ (which holds as $$|tX| \leq 1 $$). Applying the expectation, we find that:
+We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(tX) \leq 1 + tX + t^2X^2$$ (which holds as $$\vert tX \vert \leq 1 $$). Applying the expectation, we find that:
 
 $$
 \mathbb{E}[\exp (tX)] \leq 1 + t^2 \text{Var}(X)
@@ -96,4 +96,4 @@ $$
 \forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
 $$
 
-By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[|Z| \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$.
+By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$.
