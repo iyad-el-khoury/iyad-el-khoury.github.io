@@ -95,3 +95,5 @@ where the last inequality follows by a simple term by term comparison of the res
 $$
 \forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
 $$
+
+By a straight forward computation, we see that $$t = \lambda / n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[|Z| \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$.
