@@ -4,7 +4,7 @@ author: Iyad El Khoury
 comments: true
 ---
 
-Let $$(V, \lVert \cdot \rVert)$$ be a normed real vector space and $$v_1, v_2, \dots, v_n \in V$$ a family of $$n$$ unit vectors in $$V$$. A famous problem in geometry is to ask how small can the vector $$\varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$ be made, where $$\varepsilon_i \in \{-1,1\}$$ is a choice of sign for each vector $$v_i$$? Our task is thus to find some upperbound, $$f(n)$$, such that for an arbitrary family of $$n$$ unit vectors, there exists some choice of signs, $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, satisfying $$\lVert\varepsilon_1 v_1 + \dots + \varepsilon_n v_n\rVert \leq f(n)$$. I will call any theorem of this kind a *small sum* theorem.
+Let $$(V, \lVert \cdot \rVert)$$ be a normed real vector space and $$v_1, v_2, \dots, v_n \in V$$ a family of $$n$$ unit vectors in $$V$$. A famous problem in geometry is to ask how small can the vector $$\varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$ be made, where $$\varepsilon_i \in \{-1,1\}$$ is a choice of sign for each vector $$v_i$$. Our task is thus to find some upperbound, $$f(n)$$, such that for an arbitrary family of $$n$$ unit vectors, there exists some choice of signs, $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, satisfying $$\lVert\varepsilon_1 v_1 + \dots + \varepsilon_n v_n\rVert \leq f(n)$$. I will call any theorem of this kind a *small sum* theorem.
 
 As the space of signs, $$\{-1,1\}^n$$, is exponential in $$n$$ and the vectors $$\{v_i\}_i$$ are arbitrary, it seems quite reasonable that the correct approach to this problem would be to borrow the probabilistic method in combinatorics. Let us begin with the case where $$V = \mathbb{R}^d$$ and $$\lVert \cdot \rVert$$ is a Euclidean norm.
 
@@ -15,7 +15,7 @@ $$
 \mathbb{E}\big[\langle Z \mid Z \rangle\big] = \sum_{i=1}^n \sum_{j=1}^n \mathbb{E}[\varepsilon_i \varepsilon_j] \langle v_i \mid v_j \rangle = \sum_{i=1}^n \lVert v_i \rVert ^2= n
 $$
 
-By the first moment method, we thus now there exists a choice of sign $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \bar \varepsilon_1 v_1 + \dots + \bar \varepsilon_n v_n  \rVert^2 \leq n$$. This immedieatly gives us a first result:
+By the first moment method, we thus now there exists a choice of signs $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \bar \varepsilon_1 v_1 + \dots + \bar \varepsilon_n v_n  \rVert^2 \leq n$$. This immedieatly gives us a first result:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
@@ -101,12 +101,12 @@ By a straight forward computation, we see that $$t = \lambda/n$$ is best possibl
 Let us now translate this concentration inequality into a *small sum* theorem. Let us return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
 $$
-\mathbb{P}[\vert Z_j \vert \geq \lambda] \leq 2e^{-\lambda^2/2n} < 1/d \quad \text{,where } Z_j \text{ is the }j\text{-th coordinate of } Z
+\mathbb{P}[\vert Z_j \vert \geq \lambda] \leq 2e^{-\lambda^2/2n} < 1/d \quad \text{, where } Z_j \text{ is the }j\text{-th coordinate of } Z
 $$
 
-Thus by the union bound $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and there must exist some choice of sign, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$.
+Thus, by the union bound, $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and there must exist some choice of signs, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$.
 
- To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of sign, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that infact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
+ To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of signs, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that infact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
