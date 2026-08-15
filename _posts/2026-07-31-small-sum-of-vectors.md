@@ -93,5 +93,5 @@ $$
 where the last inequality follows by a simple term by term comparison of the respective power series. Hence, for all $$\lambda \geq 0$$, by the exponential moment method combined with our previous inequality:
 
 $$
-\mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t}
+\forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
 $$
