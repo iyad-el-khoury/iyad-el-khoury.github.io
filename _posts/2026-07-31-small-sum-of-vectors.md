@@ -50,7 +50,7 @@ $$
 \mathbb{P}[|Z| \geq \lambda] \leq e^{-\lambda t}\big(M_Z(t) + M_{Z}(-t)\big)
 $$
 
-A general way of doing so is by approximating the exponential function close to zero at the second order, then we would obtain an exponential bound on the moment generating function for all bounded random variables on interval $$[-1,1]$$.
+A general way of doing so is by approximating the exponential function close to zero at the second order, then we would obtain an exponential bound on the moment generating function for all bounded random variables on an interval $$[-\varepsilon,\varepsilon]$$ for some strictly positive $$\varepsilon>0$$.
 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
@@ -59,12 +59,12 @@ Let $$X$$ be some random variable of mean zero and $$|X| \leq 1$$, then for all 
 
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(Xt) \leq 1 + tX + t^2X^2$$ (which holds as $$|Xt| \leq 1 $$). Applying the expectation, we find that:
+We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(tX) \leq 1 + tX + t^2X^2$$ (which holds as $$|tX| \leq 1 $$). Applying the expectation, we find that:
 
 $$
-\mathbb{E}[\exp (Xt)] \leq 1 + t^2 \text{Var}(X)
+\mathbb{E}[\exp (tX)] \leq 1 + t^2 \text{Var}(X)
 $$
 
 The result then follows by the inequality $$1 + x \leq \exp(x)$$.
-<span class="qed">This completes the proof.</span>
+<span class="qed"> </span>
 </div>
