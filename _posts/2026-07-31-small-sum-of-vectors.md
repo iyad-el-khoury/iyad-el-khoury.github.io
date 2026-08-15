@@ -58,7 +58,7 @@ Let $$X$$ be some random variable of mean zero and $$|X| \leq 1$$, then for all 
 <div>
 
 <div class="proof" markdown="1">
-    <span class="proof-title"></span>
+<span class="proof-title"></span>
 We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(Xt) \leq 1 + tX + t^2X^2$$ (which holds as $$|Xt| \leq 1 $$). Applying the expectation, we find that:
 
 $$
@@ -66,5 +66,5 @@ $$
 $$
 
 The result then follows by the inequality $$1 + x \leq \exp(x)$$.
- <span class="qed">This completes the proof.</span>
+<span class="qed">This completes the proof.</span>
 </div>
