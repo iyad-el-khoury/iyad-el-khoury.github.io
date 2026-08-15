@@ -54,5 +54,16 @@ A general way of doing so is by approximating the exponential function close to 
 
 <div class="lemma">
 <span class="lemma-title"></span>
-
+Let $$X$$ be some random variable of mean zero and $$|X| \leq 1$$, then for all $$t \in [-1,1]$$ of absolute value at most 1 we have $$M_X(t) \leq \exp(t^2\text{Var}(X))$$.
 <div>
+<div class="proof">
+    <span class="proof-title"></span>
+We begin by a classical second order estimate of the exponential function close to zero, namely that $$\exp(Xt) \leq 1 + tX + t^2X^2$$ (which holds as $$|Xt| \leq 1 $$). Applying the expectation, we find that:
+
+$$
+\mathbb{E}[\exp (Xt)] \leq 1 + t^2 \text{Var}(X)
+$$
+
+The result then follows by the inequality $$1 + x \leq \exp(x)$$.
+ <span class="qed">This completes the proof.</span>
+</div>

@@ -43,8 +43,31 @@
     content: "Lemma " counter(lemma-counter) ". ";
   }
 
+  .proof {
+    border-left: 4px solid #657b83;
+    background: #fdf6e3;
+    padding: 0.8em 1.2em;
+    margin: 1.5em 0;
+    border-radius: 4px;
+  }
+  .proof-title {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.4em;
+    display: block;
+  }
+  .proof-title::after {
+    content: "Proof.";
+  }
+
+  .qed::after {
+    content: " \2220E";
+    margin-left: 0.3em;
+  }
+
   .theorem mjx-container[display="true"],
-  .lemma mjx-container[display="true"] {
+  .lemma mjx-container[display="true"],
+  .proof mjx-container[display="true"] {
     display: block !important;
     text-align: center !important;
     margin: 1em auto !important;
@@ -52,22 +75,22 @@
 </style>
 
 <script>
-  window.MathJax = {
-    options: {
-      renderActions: {
-        findScript: [10, function (doc) {
-          document.querySelectorAll('script[type^="math/tex"]').forEach(function (node) {
-            var display = !!node.type.match(/; *mode=display/);
-            var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-            var text = document.createTextNode('');
-            node.parentNode.replaceChild(text, node);
-            math.start = { node: text, delim: '', n: 0 };
-            math.end = { node: text, delim: '', n: 0 };
-            doc.math.push(math);
-          });
-        }, '']
-      }
+window.MathJax = {
+  options: {
+    renderActions: {
+      findScript: [10, function (doc) {
+        document.querySelectorAll('script[type^="math/tex"]').forEach(function (node) {
+          var display = !!node.type.match(/; *mode=display/);
+          var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+          var text = document.createTextNode('');
+          node.parentNode.replaceChild(text, node);
+          math.start = { node: text, delim: '', n: 0 };
+          math.end = { node: text, delim: '', n: 0 };
+          doc.math.push(math);
+        });
+      }, '']
     }
-  };
+  }
+};
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
