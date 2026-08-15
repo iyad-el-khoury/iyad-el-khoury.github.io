@@ -42,8 +42,8 @@ Given we have control on the moment generating function of $$Z$$, then, by Marko
 $$
 \left\{
 \begin{aligned}
-\mathbb{P}[Z \geq \lambda] &= \mathbb{P}[\exp(tZ) \geq \exp(t\lambda)] \leq e^{-\lambda t} M_Z(t) \\
-\mathbb{P}[-Z \geq \lambda] &= \mathbb{P}[\exp(-tZ) \geq \exp(t\lambda)] \leq e^{-\lambda t} M_{Z}(-t)
+\mathbb{P}[Z \geq \lambda] &= \mathbb{P}[e^{tZ} \geq e^{t\lambda}] \leq e^{-\lambda t} M_Z(t) \\
+\mathbb{P}[Z \leq -\lambda] &= \mathbb{P}[e^{-tZ} \geq e^{t\lambda}] \leq e^{-\lambda t} M_{Z}(-t)
 \end{aligned}
 \right.
 \quad \Longrightarrow \quad
@@ -73,6 +73,11 @@ The result then follows by the inequality $$1 + x \leq \exp(x)$$.
 
 -->
 
-Moreover, in the case where $$Z$$ may be expressed as a sum of independent random variables, this idea can be amplified by exploiting the formula $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]$$ whenever $$X$$ and $$Y$$ are independentant random variables.
+Moreover, in the case where $$Z$$ may be expressed as a sum of independent random variables, $$X_1,\dots,X_n$$, this idea can be amplified by exploiting the formula $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]$$ whenever $$X$$ and $$Y$$ are independentant random variables:
+
+$$ 
+\mathbb{P}[Z \geq \lambda] \leq   e^{-\lambda t} \mathbb{E}[\exp(tZ)] = e^{-\lambda t} \mathbb{E}[\prod_i \exp(tX_i)] = e^{-\lambda t} \prod_i \mathbb{E}[ \exp(tX_i)] 
+$$
+
 
 All in all, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails of our distribution. We will apply this strategy to the random variable $$\lVert \sum _i \varepsilon _i v_i\rVert $$ in order to obtain a new *small sum* theorem.
