@@ -78,7 +78,7 @@ $$
 $$
 
 
-All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails of our distribution. We will apply this strategy to the random variable $$\lVert \sum _i \varepsilon _i v_i\rVert $$ in order to obtain a new *small sum* theorem.
+All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails on our distribution. We will apply this strategy to the random variable $$\lVert \sum _i \varepsilon _i v_i\rVert $$ in order to obtain a new *small sum* theorem.
 
 #### A concentration of measure inequality
 
@@ -87,7 +87,7 @@ Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and
 To be able to effectively apply the exponential moment method, we must carefully analyze $$M_Z(t)$$:
 
 $$ 
-\mathbb{E}[\exp(tZ)] = \prod_i \mathbb{E}[ \exp(t\varepsilon_i)] = [\cosh(t)]^n \leq e^{nt^2/2}
+\mathbb{E}[\exp(tZ)] = \prod_i \mathbb{E}[ \exp(t\varepsilon_i v_i)] = \prod_i\cosh(tv_i) \leq \prod_i e^{v_i^2t^2/2} \leq  e^{nt^2/2}
 $$ 
 
 where the last inequality follows by a simple term by term comparison of the respective power series. Hence, for all $$\lambda \geq 0$$, by the exponential moment method combined with our previous inequality:
@@ -96,4 +96,4 @@ $$
 \forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
 $$
 
-By a straight forward computation, we see that $$t = \lambda / n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[|Z| \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$.
+By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[|Z| \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$.
