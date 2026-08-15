@@ -98,10 +98,12 @@ $$
 
 By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
 
-Let us now translate this concentration inequality into a *small sum* theorem. Let us return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda < \sqrt{2n\ln(2d)}$$, then by the above we find that for each $$j\in \{1,\dots,d\}$$:
+Let us now translate this concentration inequality into a *small sum* theorem. Let us return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
 $$
-\mathbb{P}[Z_j \geq \lambda] \leq 2e^{-\lambda^2/2n} < 1/d \quad \text{where } Z_j \text{ is the j-th coordinate of } Z
-$$
+\mathbb{P}[\vert Z_j \vert \geq \lambda] \leq 2e^{-\lambda^2/2n} < 1/d \quad \text{,where } Z_j \text{ is the }j\text{-th coordinate of } Z
+$$.
+
+Thus by the union bound $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and there must exist some choice of sign, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$. To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly smaller than $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of sign, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $${\bar \varepsilon _i\}_i$$.
 
 
