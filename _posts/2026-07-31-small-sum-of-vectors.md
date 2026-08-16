@@ -78,7 +78,7 @@ $$
 $$
 
 
-All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails on our distribution. We will apply this strategy to the random variable $$\lVert \sum _i \varepsilon _i v_i\rVert $$ in order to obtain a new *small sum* theorem.
+All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails on our distribution. We will apply this strategy to the random variable $$ \sum _i \varepsilon _i v_i $$ in order to obtain a new *small sum* theorem.
 
 #### A concentration of measure inequality
 
@@ -90,7 +90,7 @@ $$
 \mathbb{E}[\exp(tZ)] = \prod_i \mathbb{E}[ \exp(t\varepsilon_i v_i)] = \prod_i\cosh(tv_i) \leq \prod_i e^{v_i^2t^2/2} \leq  e^{nt^2/2}
 $$ 
 
-where the last inequality follows by a simple term by term comparison of the respective power series. Hence, for all $$\lambda \geq 0$$, by the exponential moment method combined with our previous inequality:
+where the inequality $$\cosh(x) \leq e^{x^2/2}$$ follows by a simple term by term comparison of the respective power series. Hence, for all $$\lambda \geq 0$$, by the exponential moment method combined with our previous inequality:
 
 $$
 \forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
@@ -98,15 +98,15 @@ $$
 
 By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
 
-Let us now translate this concentration inequality into a *small sum* theorem. Let us return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
+Let us now translate this concentration inequality into a *small sum* theorem. We return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
 $$
 \mathbb{P}[\vert Z_j \vert \geq \lambda] \leq 2e^{-\lambda^2/2n} < 1/d \quad \text{, where } Z_j \text{ is the }j\text{-th coordinate of } Z
 $$
 
-Thus, by the union bound, $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and there must exist some choice of signs, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$.
+Thus, by the union bound, $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and hence there must exist some choice of signs, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$.
 
- To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of signs, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that infact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
+ To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of signs, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that in fact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
@@ -117,3 +117,5 @@ $$
 $$
 
 </div>
+
+Quite interstingly, however not very surprising given our method, unlike the Euclidean case, this upperbound has a logarithmic dependance on the dimension of the space in which the $$\{v_i\}_i$$s live.
