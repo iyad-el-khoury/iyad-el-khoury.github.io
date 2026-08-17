@@ -4,22 +4,22 @@ author: Iyad El Khoury
 comments: true
 ---
 
-Let $$(V, \lVert \cdot \rVert)$$ be a normed real vector space and $$v_1, v_2, \dots, v_n \in V$$ a family of $$n$$ unit vectors in $$V$$. A famous problem in geometry is to ask how small can the vector $$\varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$ be made, where $$\varepsilon_i \in \{-1,1\}$$ is a choice of sign for each vector $$v_i$$. Our task is thus to find some upperbound, $$f(n)$$, such that for an arbitrary family of $$n$$ unit vectors, there exists some choice of signs, $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, satisfying $$\lVert\varepsilon_1 v_1 + \dots + \varepsilon_n v_n\rVert \leq f(n)$$. I will call any theorem of this kind a *small sum* theorem.
+Let $$(V, \lVert \cdot \rVert)$$ be a normed real vector space and $$v_1, v_2, \dots, v_n \in V$$ a family of $$n$$ unit vectors in $$V$$. A famous problem in geometry is to ask how small can the vector $$\varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$ be made, where $$\varepsilon_i \in \{-1,1\}$$ is a choice of sign for each vector $$v_i$$. Our task is thus to find some upper bound, $$f(n)$$, such that for an arbitrary family of $$n$$ unit vectors, there exists some choice of signs, $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, satisfying $$\lVert\varepsilon_1 v_1 + \dots + \varepsilon_n v_n\rVert \leq f(n)$$. I will call any theorem of this kind a *small sum* theorem.
 
 As the space of signs, $$\{-1,1\}^n$$, is exponential in $$n$$ and the vectors $$\{v_i\}_i$$ are arbitrary, it seems quite reasonable that the correct approach to this problem would be to borrow the probabilistic method in combinatorics. Let us begin with the case where $$V = \mathbb{R}^d$$ and $$\lVert \cdot \rVert$$ is a Euclidean norm.
 
 ### The Euclidean case
-Let $$(\mathbb{R}^d,\langle \cdot \mid \cdot \rangle)$$ be a Euclidean space, denote by $$\lVert \cdot \rVert $$ the norm induced by the scalar product $$\langle \cdot \mid \cdot \rangle$$ and  $$v_1, v_2, \dots, v_n \in \mathbb{R}^d$$ be unit vectors. We will consider a random choice of signs $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, or more precisely, let $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random varaibles. We are therefore interested in understanding the Euclidean norm of the random variable $$Z = \varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$. To exploit the bilinearity of the Euclidean scalar product, it will be simpler to consider the norm squared of $$Z$$, that is to say the quantity $$\langle Z \mid Z\rangle$$. Calculating the expected value of $$\lVert Z \rVert^2$$ is direct:
+Let $$(\mathbb{R}^d,\langle \cdot \mid \cdot \rangle)$$ be a Euclidean space, denote by $$\lVert \cdot \rVert $$ the norm induced by the scalar product $$\langle \cdot \mid \cdot \rangle$$ and  $$v_1, v_2, \dots, v_n \in \mathbb{R}^d$$ be unit vectors. We will consider a random choice of signs $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, or more precisely, let $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random variables. We are therefore interested in understanding the Euclidean norm of the random variable $$Z = \varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$. To exploit the bilinearity of the Euclidean scalar product, it will be simpler to consider the norm squared of $$Z$$, that is to say the quantity $$\langle Z \mid Z\rangle$$. Calculating the expected value of $$\lVert Z \rVert^2$$ is direct:
 
 $$
 \mathbb{E}\big[\langle Z \mid Z \rangle\big] = \sum_{i=1}^n \sum_{j=1}^n \mathbb{E}[\varepsilon_i \varepsilon_j] \langle v_i \mid v_j \rangle = \sum_{i=1}^n \lVert v_i \rVert ^2= n
 $$
 
-By the first moment method, we thus now there exists a choice of signs $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \bar \varepsilon_1 v_1 + \dots + \bar \varepsilon_n v_n  \rVert^2 \leq n$$. This immedieatly gives us a first result:
+By the first moment method, we thus know there exists a choice of signs $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \bar \varepsilon_1 v_1 + \dots + \bar \varepsilon_n v_n  \rVert^2 \leq n$$. This immediately gives us a first result:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
-For any Euclidean norm, $$\lVert \cdot \rVert$$ on $$\mathbb{R}^d$$ and unit vecotrs $$v_1,\dots,v_n\in \mathbb{R}^d$$, there exists $$\{\varepsilon_i\}_i \in \{-1,1\}^n$$ such that:
+For any Euclidean norm, $$\lVert \cdot \rVert$$ on $$\mathbb{R}^d$$ and unit vectors $$v_1,\dots,v_n\in \mathbb{R}^d$$, there exists $$\{\varepsilon_i\}_i \in \{-1,1\}^n$$ such that:
 
 $$ 
 \left\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \right\rVert \leq \sqrt{n} 
@@ -71,18 +71,18 @@ The result then follows by the inequality $$1 + x \leq \exp(x)$$.
 
 -->
 
-Moreover, in the case where $$Z$$ may be expressed as a sum of independent random variables, $$X_1,\dots,X_n$$, this idea can be amplified by exploiting the formula $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]$$ whenever $$X$$ and $$Y$$ are independentant random variables:
+Moreover, in the case where $$Z$$ may be expressed as a sum of independent random variables, $$X_1,\dots,X_n$$, this idea can be amplified by exploiting the formula $$\mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]$$ whenever $$X$$ and $$Y$$ are independent random variables:
 
 $$ 
 \mathbb{P}[Z \geq \lambda] \leq   e^{-\lambda t} \mathbb{E}[\exp(tZ)] = e^{-\lambda t} \mathbb{E}[\prod_i \exp(tX_i)] = e^{-\lambda t} \prod_i \mathbb{E}[ \exp(tX_i)] 
 $$
 
 
-All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upperbound we can obtain on the density of the tails on our distribution. We will apply this strategy to the random variable $$ \sum _i \varepsilon _i v_i $$ in order to obtain a new *small sum* theorem.
+All in all, as we can choose a minimizing $$t$$, the better we understand the behaviour of our moment generating function, the tighter of an upper bound we can obtain on the density of the tails on our distribution. We will apply this strategy to the random variable $$ \sum _i \varepsilon _i v_i $$ in order to obtain a new *small sum* theorem.
 
 #### A concentration of measure inequality
 
-Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random varaibles as before. By our previous discussion we are interested in establishing a concentration inequalty for the random variable $$Z = \sum _i \varepsilon _i v_i$$, which will translate directly into a *small sum* theorem. 
+Let $$v_1,\dots,v_n \in [-1,1]$$ be real numbers of absolute value at most 1 and $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random variables as before. By our previous discussion we are interested in establishing a concentration inequalty for the random variable $$Z = \sum _i \varepsilon _i v_i$$, which will translate directly into a *small sum* theorem. 
 
 To be able to effectively apply the exponential moment method, we must carefully analyze $$M_Z(t)$$:
 
@@ -96,7 +96,7 @@ $$
 \forall t\in \mathbb{R} \quad \mathbb{P}[Z \geq \lambda] \leq e^{nt^2/2-\lambda t} \implies \mathbb{P}[Z \geq \lambda] \leq \inf_{t\in \mathbb{R}} e^{nt^2/2-\lambda t}
 $$
 
-By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upperbound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
+By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upper bound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
 
 Let us now translate this concentration inequality into a *small sum* theorem. We return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
@@ -106,7 +106,7 @@ $$
 
 Thus, by the union bound, $$\mathbb{P}[\lVert Z \rVert _\infty \geq \lambda] <1$$ and hence there must exist some choice of signs, $$\{\bar \varepsilon _i\}_i \in \{-1,1\}^n$$ such that the infinity norm of $$\sum _i \bar \varepsilon _i v_i$$ is smaller than $$\lambda$$.
 
- To be able to obtain a best possible result, we may use a limiting argument. Pick any aribtrary sequnce of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of signs, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequnce $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that in fact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
+ To be able to obtain a best possible result, we may use a limiting argument. Pick any arbitrary sequence of $$\{\lambda_j\}_{j\geq 0}$$ of positive real numbers strictly greater than $$\sqrt{2n\ln(2d)}$$ converging to this lower bound $$\sqrt{2n\ln(2d)}$$. By the above, for all $$j\geq 0$$ there exists a choice of signs, $$\{ \varepsilon^{(j)} _i\}_i \in \{-1,1\}^n$$ such that $$\lVert \sum _i  \varepsilon _i v_i \rVert _\infty < \lambda_j $$. However, since the space of signs is finite, there exists a subsequence $$\{\lambda_{k_j}\}_{j\geq 0}$$ for which the choice of signs $$\{ \varepsilon^{(k_j)} _i\}_i $$ is constant, let us denote this constant value by $$\{\bar \varepsilon _i\}_i$$. Noticing that for all $$j\geq 0$$, $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty < \lambda_{k_j}$$, we deduce that in fact $$\lVert \sum _i \bar \varepsilon _i v_i \rVert _\infty \leq \sqrt{2n\ln(2d)}$$. We have concluded our second *small sum* theorem:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
@@ -118,7 +118,7 @@ $$
 
 </div>
 
-Quite interstingly, however not very surprising given our method, unlike the Euclidean case, this upperbound has a logarithmic dependance on the dimension of the space in which the $$\{v_i\}_i$$s live.
+Quite interestingly, however not very surprising given our method, unlike the Euclidean case, this upper bound has a logarithmic dependance on the dimension of the space in which the $$\{v_i\}_i$$s live.
 
 ### A result regarding general norms
 
@@ -129,11 +129,11 @@ A quite trivial *small sum* theorem which we haven't yet discussed is the follow
 Let $$(V,\lVert \cdot \rVert)$$ be a finite dimensional normed vector space over $$\mathbb{R}$$ and $$v_1,\dots,v_n\in V$$ be unit vectors with respect to $$\lVert \cdot \rVert$$.  Then there exists $$\{\varepsilon_i\}_i \in \{-1,1\}^n$$ such that:
 
 $$ 
-\left\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \right\rVert _\infty \leq n
+\left\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \right\rVert \leq n
 $$
 
 </div>
 
 Of course, this statement is true for *all* choice of signs, which makes the theorm quite uninteresting. 
 
-However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use colinearity of our family to eliminate all but a constant portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors. As we shall see this technique will give us an upperbound independent of $$n$$ and linear in $$d$$. 
+However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinearity of our family to eliminate all but a constant portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors. As we shall see this technique will give us an upper bound independent of $$n$$ and linear in $$d$$. 
