@@ -55,7 +55,7 @@ A general way of doing so is by approximating the exponential function close to 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
 Let $$X$$ be some random variable of mean zero and $$\vert X \vert \leq 1$$, then for all $$t \in [-1,1]$$ of absolute value at most 1 we have $$M_X(t) \leq \exp(t^2\text{Var}(X))$$.
-<div>
+</div>
 
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
@@ -122,7 +122,7 @@ Quite interestingly, however not very surprising given our method, unlike the Eu
 
 ### A result regarding general norms
 
-A quite trivial *small sum* theorem which we haven't yet discussed is the following basic application of the triangle inequality:
+A trivial *small sum* theorem which we haven't yet discussed is the following basic application of the triangle inequality:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
@@ -134,16 +134,16 @@ $$
 
 </div>
 
-Of course, this statement is true for *all* choice of signs, which makes the theorm quite uninteresting. 
+Of course, this statement is true for *all* choice of signs, which makes the theorm uninteresting. 
 
-However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinearity of our family to restrict ourselves to a constant portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors.Let us state a lemma, which will be proved in the next section, in order to implement this idea.
+However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinearity of our family to restrict ourselves to a constant portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors. Let us state a lemma, which will be proved in the next section, in order to implement this idea.
 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
-Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W$$ with at least $$k$$ ±1 coordinates. 
+Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
 </div>
 
-Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
+Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
 
 Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n \gg d$$:
 
@@ -155,6 +155,11 @@ $$
 \left\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \right\rVert \leq d
 $$
 
+</div>
+<div class="proof" markdown="1">
+<span class="proof-title"></span>
+
+<span class="qed"> </span>
 </div>
 
 
