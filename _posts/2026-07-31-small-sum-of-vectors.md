@@ -119,3 +119,21 @@ $$
 </div>
 
 Quite interstingly, however not very surprising given our method, unlike the Euclidean case, this upperbound has a logarithmic dependance on the dimension of the space in which the $$\{v_i\}_i$$s live.
+
+### A result regarding general norms
+
+A quite trivial *small sum* theorem which we haven't yet discussed is the following basic application of the triangle inequality:
+
+<div class="theorem" markdown="1">
+<span class="theorem-title"></span>
+Let $$(V,\lVert \cdot \rVert)$$ be a finite dimensional normed vector space over $$\mathbb{R}$$ and $$v_1,\dots,v_n\in V$ be unit vectors with respect to $$\lVert \cdot \rVert$$.  Then there exists $$\{\varepsilon_i\}_i \in \{-1,1\}^n$$ such that:
+
+$$ 
+\left\lVert \varepsilon_1 v_1 + \dots + \varepsilon_n v_n \right\rVert _\infty \leq n
+$$
+
+</div>
+
+Of course, this statement is true for *all* choice of signs, which makes the theorm quite uninteresting. 
+
+However, when $$n$$ is much larger than $$d := \dim (V)$$  we can use colinearity of our family to eliminate a large portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors. As we shall see this technique will give us an upperbound independent of $$n$$ and linear in $$d$$. 
