@@ -143,7 +143,7 @@ However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinear
 Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W$$ with at least $$k$$ ±1 coordinates. 
 </div>
 
-Geometrically, this lemma states that $$W$$ must intersect a $$k$$ dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
+Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
 
 Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n >> d$$:
 
@@ -158,4 +158,4 @@ $$
 </div>
 
 
-#### A geometric result
+#### Proof of Lemma 1
