@@ -145,7 +145,7 @@ Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$
 
 Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
 
-Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n >> d$$:
+Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n \gg d$$:
 
 <div class="theorem" markdown="1">
 <span class="theorem-title"></span>
