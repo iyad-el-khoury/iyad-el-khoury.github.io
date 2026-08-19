@@ -163,6 +163,7 @@ Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\tim
 $$
 \sum_{j=1}^n \lambda_j v_j = \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
 $$
+
 <span class="qed"> </span>
 </div>
 
