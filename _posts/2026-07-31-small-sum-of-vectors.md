@@ -27,7 +27,7 @@ $$
 
 </div>
 
-We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_n \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$\Sigma := [-1,1]^n$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
+We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_n \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$[-1,1]^n$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
 
 ### The infinity norm case
 Let us denote by $$\lVert \cdot \rVert _\infty$$ the infinity norm of $$\mathbb{R}^d$$ defined by $$\lVert (x_1, \dots, x_d) \rVert _\infty = \max _i \vert x_i\vert$$. We recall that this is not a Euclidean norm, for example, the parallelogram law does not hold for $$\lVert \cdot \rVert _\infty$$. To establish a *small sum* theorem for the infinity norm, it suffices to find $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that all coordinates of $$Z$$ are smaller than some $$f(n)$$. Once again, our strategy is to use a probabilistic argument, and in this case, to find a function $$f$$ such that $$\mathbb{P}[\lVert Z \rVert _\infty > f(n)] < 1$$. By the symmetry between coordinates and the definition of the infinity norm, it will suffice to treat the one dimensional case and show that $$\mathbb{P}[\vert Z \vert> f(n)] < 1/d$$, since the previous inequality will follow from a union bound. To achieve this we will make use of the exponential moment method, which I will quickly review before applying it to our problem. 
@@ -140,10 +140,10 @@ However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinear
 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
-Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W \cap [-1,1]^d$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
+Let $$V \subset \mathbb{R}^n$$ be a $$k$$ dimensional subspace of $$\mathbb{R}^n$$. Then there exists a vector $$v\in V \cap [-1,1]^d$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
 </div>
 
-Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is intuitive, for example in dimensions 2 and 3.
+Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$[-1,1]^d$$, which is intuitive, for example in dimensions 2 and 3.
 
 Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n \gg d$$:
 
@@ -158,7 +158,7 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap \Sigma$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote their indices by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
+Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap [-1,1]^n$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote their indices by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
 
 $$
 \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
@@ -182,3 +182,7 @@ Completing the proof, as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\
 
 
 #### Proof of Lemma 1
+
+We now give a proof of Lemma 1, fix $$V\subset \mathbb{R}^d$$ and denote $$k:= \dimV$$. In the rest of this section we will denote by $$\lVert \cdot \rVert$$ the standard Euclidean norm in $$\mathbb{R}^d$$.
+
+ We would like to find a vector $$x\in V$$ which has at least $$k$$ coordinates in $$\{-1,1\}$$. Intuitevly, we expect a vector with many coordinates in $$\{-1,1\}$$ to have a larger Euclidean norm. As $$V\cap [-1,1]^d$$ is compact and $$\lVert \cdot \rVert^2: V\cap [-1,1]^d \ni z \mapsto \lVert z \rVert^2$$ is continuous, there exists $$x\in V\cap [-1,1]^d$$ maximising this function. Suppose for contradiction that $$x$$ has strictly less than $$k$$ coordinates in $$\{-1,1\}$$
