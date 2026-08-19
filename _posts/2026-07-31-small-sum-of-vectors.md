@@ -164,6 +164,12 @@ $$
 \sum_{j=1}^n \lambda_j v_j = \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
 $$
 
+Finally, let us denote by $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$ the sign of each vector $$v_i$$, where this sign is chosen arbitrarily whenever $$v_i = 0$$. Then our linear relation transforms into:
+
+$$
+\sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j \mid\lambda_{j}\mid v_{j} = 0 \iff \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j} = \sum_{j\notin I}\varepsilon_j (1 - \mid\lambda_{j}\mid)v_{j}
+$$
+
 <span class="qed"> </span>
 </div>
 
