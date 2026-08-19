@@ -183,13 +183,13 @@ Completing the proof, as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\
 
 #### Proof of Lemma 1
 
-We now give a proof of Lemma 1, fix $$V\subset \mathbb{R}^d$$ and denote $$k:= \dim V$$. In the rest of this section we will denote by $$\lVert \cdot \rVert$$ the standard Euclidean norm in $$\mathbb{R}^d$$.
+We now give a proof of Lemma 1, let us fix $$V\subset \mathbb{R}^d$$ and denote $$k:= \dim V$$. In the rest of this section we will denote by $$\lVert \cdot \rVert$$ the standard Euclidean norm in $$\mathbb{R}^d$$.
 
  We would like to find a vector $$x\in V$$ which has at least $$k$$ coordinates in $$\{-1,1\}$$. Intuitevly, we expect a vector with many coordinates in $$\{-1,1\}$$ to have a larger Euclidean norm, thus it feels natural to pick $$x\in V\cap [-1,1]^d$$ as a vector of maximal norm.
  
- For $$J\subset [d]$$, denote $$F_J := \text{Span}(e_j \mid j\in J)$$, with the convention that $$F_\emptyset = \{0\}$$. We consider the Eucldian norm squared as a function on $$\Sigma := V\cap [-1,1]^d$$, $$\lVert \cdot \rVert^2:\Sigma \ni z \mapsto \lVert z \rVert^2$$
+ For $$J\subset [d]$$, denote $$F_J := \text{Span}(e_j \mid j\in J)$$, with the convention that $$F_\emptyset = \{0\}$$. We consider the squared Eucldian norm as a function on $$\Sigma := V\cap [-1,1]^d$$, $$\lVert \cdot \rVert^2:\Sigma \ni z \mapsto \lVert z \rVert^2$$
  
  
   As $$\Sigma$$ is compact and $$\lVert \cdot \rVert^2$$ is continuous, there exists $$x = (x_1,\dots,x_n)\in \Sigma$$ maximising this function. Define $$J :=\{j\in [d] \mid x_j \in \{-1,1\} \}$$ and suppose for contradiction that $$x$$ has strictly less than $$k$$ coordinates in $$\{-1,1\}$$, i.e $$\vert J\vert < k$$. Then, the vector space $$F_J^\perp = F_{J^c}$$ is of dimension at least $$n-k+1$$ and intersects non-trivialy with $$V$$. Fix arbitrarily some non-zero $$w\in V \cap F_{J^c}$$, since for all indices $$j\in J^c$$, $$\vert x_j\vert < 1$$ and for all $$j\in J$$, $$z_j = 0$$ there exists a neighberhood, $$I$$ of 0, such that for all $$\delta \in I$$  $$x + \delta z$$ remains in $$\Sigma$$.
   
-   Finally, as $$\lVert x + \delta z \rVert^2 = \lVert x \rVert^2 +\delta \langle z,x\rangle + \delta^2\lVert z \rVert^2$$, choosing $$\delta \in I$$ with the same sign as $$\langle z,x\rangle$$, we have found another vector in $$\Sigma$$ with larger square Euclidean norm, a contradiction.
+   Finally, as $$\lVert x + \delta z \rVert^2 = \lVert x \rVert^2 +\delta \langle z,x\rangle + \delta^2\lVert z \rVert^2$$, choosing non-zero $$\delta \in I$$ with the same sign as $$\langle z,x\rangle$$, we have found another vector in $$\Sigma$$ with strictly larger square Euclidean norm, a contradiction.
