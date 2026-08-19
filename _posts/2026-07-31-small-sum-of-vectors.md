@@ -158,7 +158,7 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap \Sigma$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
+Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap \Sigma$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote their indices by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
 
 $$
 \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
@@ -176,7 +176,7 @@ $$
 \left \lVert  \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j}  \right \rVert \leq \sum_{j\notin I} 1 - \vert\lambda_{j}\vert \leq d 
 $$
 
-This completes the proof since we have found a choice of signs $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that $$ \lVert \sum_i\varepsilon_iv_i \rVert \leq d$$.
+Which completes the proof as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that $$ \lVert \sum_i\varepsilon_iv_i \rVert \leq d$$.
 <span class="qed"> </span>
 </div>
 
