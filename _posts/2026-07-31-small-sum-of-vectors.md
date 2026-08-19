@@ -134,7 +134,7 @@ $$
 
 </div>
 
-Of course, this statement is true for *all* choice of signs, which makes the theorm uninteresting. 
+Of course, this statement is true for *all* choice of signs, which makes the theorm uninteresting in our context.
 
 However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinearity of our family to restrict ourselves to a constant portion of the $$\{v_i\}_i$$ and apply the triangle inequality on the rest of our vectors. Let us state a lemma, which will be proved in the next section, in order to implement this idea.
 
@@ -173,10 +173,10 @@ $$
 By the triangle inequality we conclude that:
 
 $$
-\left \lVert  \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j}  \right \rVert \leq \sum_{j\notin I} 1 - \vert\lambda_{j}\vert \leq d 
+\left \lVert  \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j}  \right \rVert \leq \sum_{j\notin I} (1 - \vert\lambda_{j}\vert) \leq d 
 $$
 
-Which completes the proof as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that $$ \lVert \sum_i\varepsilon_iv_i \rVert \leq d$$.
+Completing the proof, as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that $$ \lVert \sum_i\varepsilon_iv_i \rVert \leq d$$.
 <span class="qed"> </span>
 </div>
 
