@@ -158,7 +158,7 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap [-1,1]^n$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote their indices by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
+Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap [-1,1]^n$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote their indices by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
 
 $$
 \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
@@ -183,6 +183,11 @@ Completing the proof, as we have found signs $$\{\varepsilon _i \}_i \in \{-1,1\
 
 #### Proof of Lemma 1
 
-We now give a proof of Lemma 1, fix $$V\subset \mathbb{R}^d$$ and denote $$k:= \dimV$$. In the rest of this section we will denote by $$\lVert \cdot \rVert$$ the standard Euclidean norm in $$\mathbb{R}^d$$.
+We now give a proof of Lemma 1, fix $$V\subset \mathbb{R}^d$$ and denote $$k:= \dim V$$. In the rest of this section we will denote by $$\lVert \cdot \rVert$$ the standard Euclidean norm in $$\mathbb{R}^d$$.
 
- We would like to find a vector $$x\in V$$ which has at least $$k$$ coordinates in $$\{-1,1\}$$. Intuitevly, we expect a vector with many coordinates in $$\{-1,1\}$$ to have a larger Euclidean norm. As $$V\cap [-1,1]^d$$ is compact and $$\lVert \cdot \rVert^2: V\cap [-1,1]^d \ni z \mapsto \lVert z \rVert^2$$ is continuous, there exists $$x\in V\cap [-1,1]^d$$ maximising this function. Suppose for contradiction that $$x$$ has strictly less than $$k$$ coordinates in $$\{-1,1\}$$
+ We would like to find a vector $$x\in V$$ which has at least $$k$$ coordinates in $$\{-1,1\}$$. Intuitevly, we expect a vector with many coordinates in $$\{-1,1\}$$ to have a larger Euclidean norm, thus it feels natural to pick $$x\in V\cap [-1,1]^d$$ as a vector of maximal norm.
+ 
+ For $$J\subset [d]$$, denote $$F_J := \text{Span}(e_j \mid j\in J)$$, with the convention that $$F_\emptyset = \{0\}$$. We consider the Eucldian norm squared as a function on $$\Sigma := V\cap [-1,1]^d$$, $$\lVert \cdot \rVert^2:\Sigma \ni z \mapsto \lVert z \rVert^2$$
+ 
+ 
+  As $$\Sigma$$ is compact and $$\lVert \cdot \rVert^2$$ is continuous, there exists $$x = (x_1,\dots,x_n)\in \Sigma$$ maximising this function. Define $$J :=\{j\in [d] \mid x_j \in \{-1,1\} \}$$ and suppose for contradiction that $$x$$ has strictly less than $$k$$ coordinates in $$\{-1,1\}$$, i.e $$|J| < k$$. Then, the vector space $$F_J^\perp = F_{J^c}$$ is of dimension at least $$n-k+1$$ and intersects non-trivialy with $$V$$, let $$w\in V \cap F_{J^c}$$.
