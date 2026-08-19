@@ -164,12 +164,19 @@ $$
 \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
 $$
 
-Finally, let us denote by $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$ the sign of each vector $$v_i$$, where this sign is chosen arbitrarily whenever $$v_i = 0$$. Then our linear relation transforms into:
+Finally, let us denote by $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$ the sign of each coordinate $$\lambda_i$$, where this sign is chosen arbitrarily whenever $$v_i = 0$$. Then our linear relation transforms into:
 
 $$
 \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j \vert\lambda_{j}\vert v_{j} = 0 \iff \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j} = \sum_{j\notin I}\varepsilon_j (1 - \vert\lambda_{j}\vert)v_{j}
 $$
 
+By the triangle inequality we conclude that:
+
+$$
+\left \lVert  \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j}  \right \rVert \leq \sum_{j\notin I} 1 - \vert\lambda_{j}\vert \leq d 
+$$
+
+This completes the proof since we have found a choice of signs $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that $$ \lVert \sum_i\varepsilon_iv_i \rVert \leq d$$.
 <span class="qed"> </span>
 </div>
 
