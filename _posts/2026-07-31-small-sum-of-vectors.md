@@ -158,7 +158,7 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-
+Let us denote by $$M = (v_1\mid v_2 \mid \dots \mid v_n)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and $$\ker (M)$$ be the kernel of $$M$$. Of course, the dimension of $$\ker M = n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$, hence is at least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$i_1< i_2 < \dots < i_{n-d}$$.
 <span class="qed"> </span>
 </div>
 
