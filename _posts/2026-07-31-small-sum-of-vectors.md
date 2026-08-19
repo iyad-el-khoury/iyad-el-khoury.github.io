@@ -140,7 +140,7 @@ However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinear
 
 <div class="lemma" markdown="1">
 <span class="lemma-title"></span>
-Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
+Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W \cap [-1,1]^d$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
 </div>
 
 Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is intuitive, for example in dimensions 2 and 3.
@@ -158,7 +158,7 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
+Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap \Sigma$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
 
 $$
 \sum_{j=1}^n \lambda_j v_j = \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
