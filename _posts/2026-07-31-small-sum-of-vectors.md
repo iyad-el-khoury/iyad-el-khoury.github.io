@@ -161,13 +161,13 @@ $$
 Let us denote by $$M= \left(v_1\mid v_2 \mid \dots \mid v_n\right)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and by $$\ker M$$ the kernel of this matrix. Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M \cap \Sigma$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
 
 $$
-\sum_{j=1}^n \lambda_j v_j = \sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
+\sum_{j\in I}\lambda_{j} v_{j} + \sum_{j\notin I}\lambda_{j} v_{j} = 0
 $$
 
 Finally, let us denote by $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$ the sign of each vector $$v_i$$, where this sign is chosen arbitrarily whenever $$v_i = 0$$. Then our linear relation transforms into:
 
 $$
-\sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j \mid\lambda_{j}\mid v_{j} = 0 \iff \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j} = \sum_{j\notin I}\varepsilon_j (1 - \mid\lambda_{j}\mid)v_{j}
+\sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j \vert\lambda_{j}\vert v_{j} = 0 \iff \sum_{j\in I}\varepsilon_{j} v_{j} + \sum_{j\notin I}\varepsilon_j v_{j} = \sum_{j\notin I}\varepsilon_j (1 - \vert\lambda_{j}\vert)v_{j}
 $$
 
 <span class="qed"> </span>
