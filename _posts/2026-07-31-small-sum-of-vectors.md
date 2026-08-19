@@ -6,7 +6,7 @@ comments: true
 
 Let $$(V, \lVert \cdot \rVert)$$ be a normed real vector space and $$v_1, v_2, \dots, v_n \in V$$ a family of $$n$$ unit vectors in $$V$$. A famous problem in geometry is to ask how small can the vector $$\varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$ be made, where $$\varepsilon_i \in \{-1,1\}$$ is a choice of sign for each vector $$v_i$$. Our task is thus to find some upper bound, $$f(n)$$, such that for an arbitrary family of $$n$$ unit vectors, there exists some choice of signs, $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, satisfying $$\lVert\varepsilon_1 v_1 + \dots + \varepsilon_n v_n\rVert \leq f(n)$$. I will call any theorem of this kind a *small sum* theorem.
 
-As the space of signs, $$\{-1,1\}^n$$, is exponential in $$n$$ and the vectors $$\{v_i\}_i$$ are arbitrary, it seems quite reasonable that the correct approach to this problem would be to borrow the probabilistic method in combinatorics. Let us begin with the case where $$V = \mathbb{R}^d$$ and $$\lVert \cdot \rVert$$ is a Euclidean norm.
+As the space of signs, $$\{-1,1\}^n$$, is exponential in $$n$$ and the vectors $$\{v_i\}_i$$ are arbitrary, it seems reasonable that the correct approach to this problem would be to borrow the probabilistic method in combinatorics. Let us begin with the case where $$V = \mathbb{R}^d$$ and $$\lVert \cdot \rVert$$ is a Euclidean norm.
 
 ### The Euclidean case
 Let $$(\mathbb{R}^d,\langle \cdot \mid \cdot \rangle)$$ be a Euclidean space, denote by $$\lVert \cdot \rVert $$ the norm induced by the scalar product $$\langle \cdot \mid \cdot \rangle$$ and  $$v_1, v_2, \dots, v_n \in \mathbb{R}^d$$ be unit vectors. We will consider a random choice of signs $$\{\varepsilon_i\}_{i} \in \{-1,1\}^n$$, or more precisely, let $$\varepsilon_i \sim \text{Unif}(\{-1,1\})$$ be i.i.d Rademacher random variables. We are therefore interested in understanding the Euclidean norm of the random variable $$Z = \varepsilon_1 v_1 + \dots + \varepsilon_n v_n$$. To exploit the bilinearity of the Euclidean scalar product, it will be simpler to consider the norm squared of $$Z$$, that is to say the quantity $$\langle Z \mid Z\rangle$$. Calculating the expected value of $$\lVert Z \rVert^2$$ is direct:
@@ -143,7 +143,7 @@ However, when $$n$$ is much larger than $$d := \dim (V)$$,  we can use collinear
 Let $$V$$ be a $$n$$ dimensional $$\mathbb{R}$$ vector space and $$W \subset V$$ some $$k$$ dimensional subspace. Then there exists a vector $$w\in W$$ with at least $$k$$ coordinates in $$\{-1,1\}$$. 
 </div>
 
-Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is quite intuitive, for example in dimensions 2 and 3.
+Geometrically, this lemma states that any $$k$$-dimensional subspace must intersect a $$n-k$$-dimensional face of the polytope $$\Sigma = [-1,1]^d$$, which is intuitive, for example in dimensions 2 and 3.
 
 Admitting this lemma for a moment, let us now prove the follwing *small sum*  theorem, which can be thought of as a stronger version of Theorem 3 in the regime $$n \gg d$$:
 
@@ -158,7 +158,17 @@ $$
 </div>
 <div class="proof" markdown="1">
 <span class="proof-title"></span>
-Let us denote by $$M = (v_1\mid v_2 \mid \dots \mid v_n)$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$ and $$\ker (M)$$ be the kernel of $$M$$. Of course, the dimension of $$\ker M = n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$, hence is at least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$i_1< i_2 < \dots < i_{n-d}$$.
+Let us denote by $$M$$ the $$d\times n$$ matrix whose columns are formed by the vectors $$\{v_i\}_i$$:
+
+$$
+M = \left(v_1\mid v_2 \mid \dots \mid v_n\right)
+$$
+
+Of course, by the rank-nullity theorem, the dimension of $$\ker M$$ is $$n - r$$, where $$r = \dim\text{Span}(\{v_i\}_i)$$. Hence, $$\ker (M)$$ is least $$n-d$$ dimensional. Applying Lemma 1, there must exist a vector $$\lambda = (\lambda_1,\dots, \lambda_n) \in \ker M$$ with at least $$n-d$$ of its coordinates in $$\{-1,1\}$$, we denote them by $$ I = \{i_1< i_2 < \dots < i_{n-d}\}$$. As $$\lambda\in \ker M$$ we have that:
+
+$$
+\sum_{j=1}^n \lambda_j v_j = \sum_{j\in I\}\lambda_{j} v_{j} + \sum_{j\notin I\}\lambda_{j} v_{j} = 0
+$$
 <span class="qed"> </span>
 </div>
 
