@@ -29,7 +29,7 @@ $$
 
 We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_d \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$[-1,1]^d$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^d$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
 
-<figure>
+<figure style="max-width: 420px; margin: 2em auto;">
   <img src="{{ '/assets/pngs/posts/SmallVectorSum/cube.png' | relative_url }}">
   <figcaption>
     For \(d=3\), the eight sums \(\varepsilon_1e_1+\varepsilon_2e_2+\varepsilon_3e_3\)
