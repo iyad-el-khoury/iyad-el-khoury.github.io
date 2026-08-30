@@ -30,7 +30,7 @@ $$
 We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_d \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$[-1,1]^d$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^d$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
 
 <figure>
-  <img src="{{ '/assets/pngs/posts/SmallVectorSum/tightness.png' | relative_url }}">
+  <img src="{{ '/assets/pngs/posts/SmallVectorSum/cube.png' | relative_url }}">
   <figcaption>
     For \(d=3\), the eight sums \(\varepsilon_1e_1+\varepsilon_2e_2+\varepsilon_3e_3\)
     are the vertices of \([-1,1]^3\), all at distance \(\sqrt{3}=\sqrt{n}\) from the origin.
@@ -106,7 +106,7 @@ $$
 
 By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upper bound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
 <figure>
-  <img src="{{ '/assets/pngs/posts/SmallVectorSum/concentration.png' | relative_url }}">
+  <img src="{{ '/assets/pngs/posts/SmallVectorSum/concentrationBlack.png' | relative_url }}">
 </figure>
 Let us now translate this concentration inequality into a *small sum* theorem. We return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
