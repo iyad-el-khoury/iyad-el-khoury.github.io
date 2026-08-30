@@ -27,7 +27,15 @@ $$
 
 </div>
 
-We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_n \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$[-1,1]^n$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
+We may also notice that this result is tight, for example, by considering the standard Euclidean norm and the canonical unit vectors $$e_1,\dots,e_d \in \mathbb{R}^d$$, the vector $$Z = \sum _i \varepsilon _i e_i $$ is a vertex of the hypercube $$[-1,1]^d$$ for any choice of $$\{\varepsilon _i \}_i \in \{-1,1\}^d$$. Therefore, in this case there is no choice of signs which obtains a norm of $$Z$$ smaller than $$\sqrt{n}$$.
+
+<figure>
+  <img src="{{ '/assets/pngs/posts/SmallVectorSum/tightness.png' | relative_url }}">
+  <figcaption>
+    For \(d=3\), the eight sums \(\varepsilon_1e_1+\varepsilon_2e_2+\varepsilon_3e_3\)
+    are the vertices of \([-1,1]^3\), all at distance \(\sqrt{3}=\sqrt{n}\) from the origin.
+  </figcaption>
+</figure>
 
 ### The infinity norm case
 Let us denote by $$\lVert \cdot \rVert _\infty$$ the infinity norm of $$\mathbb{R}^d$$ defined by $$\lVert (x_1, \dots, x_d) \rVert _\infty = \max _i \vert x_i\vert$$. We recall that this is not a Euclidean norm, for example, the parallelogram law does not hold for $$\lVert \cdot \rVert _\infty$$. To establish a *small sum* theorem for the infinity norm, it suffices to find $$\{\varepsilon _i \}_i \in \{-1,1\}^n$$ such that all coordinates of $$Z$$ are smaller than some $$f(n)$$. Once again, our strategy is to use a probabilistic argument, and in this case, to find a function $$f$$ such that $$\mathbb{P}[\lVert Z \rVert _\infty > f(n)] < 1$$. By the symmetry between coordinates and the definition of the infinity norm, it will suffice to treat the one dimensional case and show that $$\mathbb{P}[\vert Z \vert> f(n)] < 1/d$$, since the previous inequality will follow from a union bound. To achieve this we will make use of the exponential moment method, which I will quickly review before applying it to our problem. 
@@ -97,7 +105,9 @@ $$
 $$
 
 By a straight forward computation, we see that $$t = \lambda/n$$ is best possible and thus that  $$\mathbb{P}[Z \geq \lambda] \leq e^{-\lambda^2/2n}$$. By the symmetry $$Z\sim -Z$$, we immediatly obtain the identical upper bound on the lower tail of the distribution and therefore that $$ \mathbb{P}[\vert Z \vert \geq \lambda] \leq 2 e^{-\lambda^2/2n} $$. 
-
+<figure>
+  <img src="{{ '/assets/pngs/posts/SmallVectorSum/concentration.png' | relative_url }}">
+</figure>
 Let us now translate this concentration inequality into a *small sum* theorem. We return to the $$d$$-dimensional case, i.e when $$v_1,\dots,v_n \in \mathbb{S}^{d-1}$$. Fix some positive $$ \lambda > \sqrt{2n\ln(2d)}$$, then by the above concentration inequality we find that for each $$j\in \{1,\dots,d\}$$:
 
 $$
