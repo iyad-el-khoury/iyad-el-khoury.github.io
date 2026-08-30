@@ -15,14 +15,14 @@ We also note that this can be seen as a random walk in $$\mathbb{R}^d$$ of lengt
 
 <div style="display: flex; gap: 1em; flex-wrap: wrap; margin: 2em 0;">
   <figure style="flex: 1 1 320px; margin: 0;">
-    <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_11-gon.mp4' | relative_url }}"
-           style="width: 100%; height: auto;"
-           autoplay loop muted playsinline preload="metadata"></img>
+    <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_11-gon.gif' | relative_url }}"
+         style="width: 100%; height: auto;"
+         alt="All 2048 sign paths for n=11">
   </figure>
   <figure style="flex: 1 1 320px; margin: 0;">
-    <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_13-gon.mp4' | relative_url }}"
-           style="width: 100%; height: auto;"
-           autoplay loop muted playsinline preload="metadata"></img>
+    <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_13-gon.gif' | relative_url }}"
+         style="width: 100%; height: auto;"
+         alt="All 8192 sign paths for n=13">
   </figure>
 </div>
 
