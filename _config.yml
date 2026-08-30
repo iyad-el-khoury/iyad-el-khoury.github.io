@@ -18,7 +18,7 @@ plugins:
   - jekyll-remote-theme
 
 minima:
-  skin: solarized-light
+  skin: solarized-dark
   date_format: "%b-%d-%Y"
   hide_site_feed_link: true
   social_links:
