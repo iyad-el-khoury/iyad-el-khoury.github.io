@@ -17,12 +17,12 @@ We also note that this can be seen as a random walk in $$\mathbb{R}^d$$ of lengt
   <figure style="flex: 1 1 320px; margin: 0;">
     <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_11-gon.mp4' | relative_url }}"
            style="width: 100%; height: auto;"
-           autoplay loop muted playsinline preload="metadata"></video>
+           autoplay loop muted playsinline preload="metadata"></img>
   </figure>
   <figure style="flex: 1 1 320px; margin: 0;">
     <img src="{{ '/assets/gifs/posts/SmallVectorSum/all_paths_13-gon.mp4' | relative_url }}"
            style="width: 100%; height: auto;"
-           autoplay loop muted playsinline preload="metadata"></video>
+           autoplay loop muted playsinline preload="metadata"></img>
   </figure>
 </div>
 
