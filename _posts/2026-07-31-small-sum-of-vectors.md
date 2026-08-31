@@ -221,3 +221,7 @@ For $$J\subset [d]$$, denote $$F_J := \text{Span}(e_j \mid j\in J)$$, with the c
    Finally, as $$\lVert x + \delta z \rVert^2 = \lVert x \rVert^2 + 2\delta \langle z,x\rangle + \delta^2\lVert z \rVert^2$$, choosing non-zero $$\delta \in I$$ with the same sign as $$\langle z,x\rangle$$ (or arbitrarily if this term is zero), we have found another vector in $$\Sigma$$ with strictly larger square Euclidean norm, a contradiction.
 <span class="qed"> </span>
 </div>
+
+#### Acknowledgments
+
+This post is heavily inspired by the the **[2026 second concours](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf) of l'ÉNS Lyon, consisting of my solutions and digestion of the paper. The images and animations were generated with the help of Claude.
