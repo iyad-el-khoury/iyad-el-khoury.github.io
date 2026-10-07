@@ -224,4 +224,4 @@ For $$J\subset [d]$$, denote $$F_J := \text{Span}(e_j \mid j\in J)$$, with the c
 
 #### Acknowledgments
 
-This post is heavily inspired by the the **[2026 second concours](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf) of l'ÉNS Lyon, consisting of my solutions and digestion of the paper. The images and animations were generated with the help of Claude.
+This post is heavily inspired by the the **[2026 second concours](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf)** of l'ÉNS Lyon, consisting of my solutions and digestion of the paper. The images and animations were generated with the help of Claude.
